@@ -23,8 +23,8 @@ const Hero = () => {
           <div className='relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]'>
             <h1 className='h1 mb-6'>
               Explore the Possibilities of AI Chatting with
-              <span className='inline-block relative'>
-                Brainwave
+              <span className='inline-block relative mx-2'>
+                 Brainwave
                 <img
                   src={curve}
                   className='absolute top-full left-0 w-full xl:-mt-2'
@@ -35,11 +35,12 @@ const Hero = () => {
               </span>
             </h1>
             <p className='body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8'>
-              Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.
+            Unleash the power of AI within Brainwave. Upgrade your productivity with Brainwave, the open AI chat app.
             </p>
-            <Button href='/pricing' white>
-              Get Started
-            </Button>
+            <Button href='/pricing' >
+  Get started
+</Button>
+
           </div>
           <div className='relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24'>
             <div className='relative z-1 p-0.25 rounded-2xl bg-conic-gradient'>
@@ -57,23 +58,23 @@ const Hero = () => {
                 <Generating className="absolute left-1/2 transform -translate-x-1/2 bottom-5 
                   md:bottom-8 md:w-[40rem]"/>
 
+<ScrollParallax isAbsolutelyPositioned>
+  <ul className='hidden absolute -left-[5.5rem] 
+  bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur 
+  border border-n-1/10 rounded-2xl xl:flex'>
+    {heroIcons.map((icon, index) => (
+      <li className='p-5' key={index}>
+        <img
+          src={icon}
+          width={24}
+          height={25}
+          alt={`icon-${index}`}
+        />
+      </li>
+    ))}
+  </ul>
+</ScrollParallax>
 
-                  <ScrollParallax isAbsolutelyPositioned>
-                    <ul className='hidden absolute -left-[5.5rem] 
-                    bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur 
-                    border border-n-1/10 rounded-2xl xl:flex'>
-                      {heroIcons.map((icon, index) => (
-                        <li className='p-5' key={index}>
-                          <img
-                            src={icon}
-                            width={24}
-                            height={25}
-                            alt={`icon-${index}`}
-                          />
-                        </li>
-                      ))}
-                    </ul>
-                  </ScrollParallax>
                 </div>
               </div>
               <Gradient />

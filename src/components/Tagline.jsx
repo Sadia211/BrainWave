@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Tagline = () => {
+const Tagline = ({className,children}) => {
   return (
-    <div>
-      
+    
+    <div className={`tagline flex items-center ${className||""}`}>
+     <div className='mx-3 texxt-n-3'>{children}</div>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import Hero from './components/Hero.jsx';
 import Benefits from './components/Benefits.jsx';
 import Services from './components/Services.jsx';
 import Pricing from './components/Pricing.jsx';
+import Footer from './components/Footer.jsx';
 const App = () => {
   return (
     <>
@@ -15,8 +16,10 @@ const App = () => {
        <Benefits/>
        <Services/>
        <Pricing/>
+       <Footer/>
       </div>
       <ButtonGradient />
+
     </>
   );
 };
